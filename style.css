@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --common-color: #0fbcf9;
+    --secondary-color: #4bcffa;
+}
+body {
+    background: #485460;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 1170px;
+    margin: 0 15px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: #1e272e;
+    padding: 5px 20px;
+    flex-wrap: wrap;
+}
+.logo  {
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    user-select: none;
+}
+
+ul {
+    list-style: none;
+}
+ul li  {
+    display: inline-block;
+    margin: 0 5px;
+}
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: consolas;
+    margin: 0 5px;
+    text-transform: uppercase;
+    transition: ease 0.5s;
+    font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
+}
+ul li a:hover {
+    color: var(--common-color);
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.review-box {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.521);
+    margin-top: 30px;
+}
+.review-box img.team-img {
+    width: 150px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    border: 3px solid var(--common-color);
+}
+
+p.name {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+p.role {
+    font-size: 14px;
+    color: var(--common-color)
+}
+p.person-desc {
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0;
+}
+.btns {
+    margin: 20px 0;
+}
+button {
+    padding: 5px 10px;
+    background: var(--common-color);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+
+}
+h1.title {
+    color: #fff;
+    position: relative;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    user-select: none;
+}
+h1.title::after {
+   position: absolute;
+   background: var(--common-color);
+   bottom: 0;
+   left: 44%;
+   content: "";
+   width: 70px;
+   height: 4px;
+}
